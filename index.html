@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CV - I Made Aditya Arimbawa</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header class="profile-header">
+      <img src="foto_aditya.jpg" alt="Foto Profil" class="profile-pic">
+      <h2>CV</h2>
+      <h1>I Made Aditya Arimbawa</h1>
+    </header>
+
+    <nav class="menu">
+      <ul>
+        <li><a href="#" onclick="showSection('about')">ISI CV </a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section id="about" class="cv-section hidden">
+        <div class="section">
+          <h3>Profil Singkat</h3>
+          <p>Saya I Made Aditya Arimbawa, umur 19 tahun, mahasiswa semester 3 dari prodi Sistem Informasi di ITB Stikom Bali.</p>
+        </div>
+
+        <div class="section">
+          <h3>Pendidikan</h3>
+          <ul>
+            <li>Institut Teknologi dan Bisnis STIKOM Bali (2024 - sekarang)</li>
+            <li>SMA Negeri 1 Nusa Penida (2021 - 2024)</li>
+            <li>SMP Negeri Satu Atap Pejukutan (2018 - 2021)</li>
+          </ul>
+        </div>
+
+        <div class="section">
+          <h3>Keahlian</h3>
+          <ul>
+            <li>HTML & CSS dasar</li>
+            <li>microsoft office</li>
+            <li>Desain grafis dasar</li>
+          </ul>
+        </div>
+
+        <div class="section">
+          <h3>Hobi</h3>
+          <ul>
+            <li>futsal</li>
+            <li>volly</li>
+          </ul>
+        </div>
+
+        <div class="section">
+          <h3>Kontak saya</h3>
+          <p>
+            📞 <a href="tel:+6282340474832">+62 823-4047-4832</a><br>
+            📧 <a href=>madeaditya897@gmail.com</a><br>
+            📷 <a href="https://www.instagram.com/madeaditya_65/" target="_blank">@madeaditya_65</a>
+          </p>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script>
+    function showSection(id) {
+      const sections = document.querySelectorAll('.cv-section');
+      sections.forEach(section => section.classList.add('hidden'));
+
+      const target = document.getElementById(id);
+      if (target) {
+        target.classList.remove('hidden');
+      }
+    }
+  </script>
+</body>
+</html>
